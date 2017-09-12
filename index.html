@@ -1,195 +1,288 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Form Template</title>
-  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Personal Protfolio">
+    <meta name="author" content="Saurabhkumar Marpadge">
+    <link rel="shortcut icon" href="img/profile.jpg">
+    <title>Prashant Birajdar</title>
 
-<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:200,400,800" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/css/site.css" />
 
-<link href="http://dev.see8ch.com/see8ch/v3/fonts/ss-social/ss-social.css" rel="stylesheet" />
+  </head>
 
-<link href="http://dev.see8ch.com/see8ch/v3/fonts/ss-standard/ss-standard.css" rel="stylesheet" />
-  
-  
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      body {
-  background: #efefef;
-  font-size: 62.5%;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  color: #B6B6B6;
-}
-body section {
-  background: white;
-  margin: 60px auto 120px;
-  border-top: 15px solid #313A3D;
-  text-align: center;
-  padding: 50px 0 110px;
-  width: 80%;
-  max-width: 1100px;
-}
-body section h1 {
-  margin-bottom: 40px;
-  font-size: 4em;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-}
 
-form {
-  width: 58.33333%;
-  margin: 0 auto;
-}
-form .field {
-  width: 100%;
-  position: relative;
-  margin-bottom: 15px;
-}
-form .field label {
-  text-transform: uppercase;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #313A3D;
-  width: 100%;
-  padding: 18px 0;
-  font-size: 1.45em;
-  letter-spacing: 0.075em;
-  -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
-form .field label + span {
-  font-family: 'SSStandard';
-  opacity: 0;
-  color: white;
-  display: block;
-  position: absolute;
-  top: 12px;
-  left: 7%;
-  font-size: 2.5em;
-  text-shadow: 1px 2px 0 #cd6302;
-  -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
-form .field input[type="text"],
-form .field textarea {
-  border: none;
-  background: #E8E9EA;
-  width: 80.5%;
-  margin: 0;
-  padding: 18px 0;
-  padding-left: 19.5%;
-  color: #313A3D;
-  font-size: 1.4em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-form .field input[type="text"]#msg,
-form .field textarea#msg {
-  height: 18px;
-  resize: none;
-  -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
-form .field input[type="text"]:focus, form .field input[type="text"].focused,
-form .field textarea:focus,
-form .field textarea.focused {
-  outline: none;
-}
-form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
-form .field textarea:focus#msg,
-form .field textarea.focused#msg {
-  padding-bottom: 150px;
-}
-form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
-form .field textarea:focus + label,
-form .field textarea.focused + label {
-  width: 18%;
-  background: #FD9638;
-  color: #313A3D;
-}
-form .field input[type="text"].focused + label,
-form .field textarea.focused + label {
-  color: #FD9638;
-}
-form .field:hover label {
-  width: 18%;
-  background: #313A3D;
-  color: white;
-}
-form input[type="submit"] {
-  background: #FD9638;
-  color: white;
-  -webkit-appearance: none;
-  border: none;
-  text-transform: uppercase;
-  position: relative;
-  padding: 13px 50px;
-  font-size: 1.4em;
-  letter-spacing: 0.1em;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
-form input[type="submit"]:hover {
-  background: #313A3D;
-  color: #FD9638;
-}
-form input[type="submit"]:focus {
-  outline: none;
-  background: #cd6302;
-}
 
-    </style>
+<body data-spy="scroll" data-target=".navbar">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
 
-</head>
 
-<body>
-  	<section id="hire">
-    <h1>Contact Me</h1>
-    
-    <form method="post" action="https://formspree.io/pbirajdar670@gmail.com">
-	      <div class="field name-box">
-		        <input type="text" name="name" id="name" placeholder="Who Are You?"/>
-        		<label for="name">Name</label>
-		        <span class="ss-icon">check</span>
-	      </div>
 
-	      <div class="field email-box">
-		        <input type="text" name="email" id="email" placeholder="name@email.com"/>
-		        <label for="email">Email</label>
-		        <span class="ss-icon">check</span>
-	      </div>
+<!--
+  <div id="content">
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<ul class="nav navbar-nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#work">What I do</a></li>
+			<li><a href="#about">What about me</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#resume">Resume</a></li>
+			<li><a href="#contact">Get In Touch</a></li>
+		</ul>
+	</nav>
+  -->
+  <div class="container site-main" style="background: url(img/main-bg.jpg); background-size: 100% 100% !important;">
+    <div class="content">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+        <h1 class="main-title">
+            <p class="name">Prashant Birajdar</p>
+            <p id="xs-name" class="visible-xs">Prashant Birajdar</p>
+            <br class="visible-xs">
+            <img class="face" src="img/profile.jpg" width="200" height="180">
+            <br>
+            <br>
+            <p class="subtext" >
+              Software Engineer at ACI World Wide.
+            </p>
+            <p id="xs-subtext"class="subtext visible-xs" >
+              Software Engineer <br>at <br>ACI World Wide.
+            </p>
+			<br><br>
+			<p class="subtext" >
+              My Next Activity
+            </p>
+			<p id="xs-subtext"class="subtext visible-xs" >
+              My Next Activty
+            </p>
+            <p class="name">15th September:</br> Seminar </br>on </br>JAVA Application Developement</br> at SCOE </p>
+            <p id="xs-name" class="visible-xs">15th September:<br>Seminar on<br>JAVA Application Developement<br>at SCOE</p>
+  		
+          </h1>
 
-	      <div class="field msg-box">
-		        <textarea name="message"  id="msg"  rows="4" placeholder="Your message goes here..."/></textarea>
-		        <label for="msg">Msg</label>
-		        <span class="ss-icon">check</span>
-	      </div>
+      </div>
+   </div>
+</div>
+  <!--
+  <section id="home" style="background: url(img/header.jpg); background-size: 100% 100%;" class="cl_white text-center">
+    <div class="row" style="height: 100%;">
+      <div class="col-md-4" align="center" style=" height:85%; padding:75px;" >
+          <img src="https://avatars1.githubusercontent.com/u/14952088?v=3&s=400" class="img-rounded" alt="Cinque Terre"  >
+      </div>
 
-	      <input class="button" type="submit" value="Send" />
+      <div class="col-md-8" align="center" style=" height:85%;//border:1px solid red;">
+        <h1>Saurabhkumar Marpadge</h1>
+    		<p class="lead">Developer. Student. Learner.</p>
+    		<button class="btn btn-default"><a href="#contact">Get In Touch</a></button>
+        <h3 padding-top:"10px">Work in progress</h3>
+      </div>
+    </div>
+
+	</section>
+-->
+  <section id="work" class="container">
+		<div class="page-header">
+			<b><h1 class="text-center">-See Seminar Contents-</h1></b>
+   <div id="viewresume">
+          <a href="#"  data-toggle="modal" data-target="#scontent" class="button" target="_blank" ><b>View Content</b></a>
+   </div>
+		</div>
+    <div class="block">
+    <table class="table center" border="1">
+	<tr>
+	<th><h1>File Name</h1></th>
+	<th><h1>Download Link</h1></th>
+	</tr>
+	<tr>
+	<td><h1>NetBeans V8.2<h1></td>
+	<td><h1><a href="https://netbeans.org/downloads/start.html?platform=windows&lang=en&option=all">Download Now</a></h1></td>
+	</tr>
+    <tr>
+	<td><h1>MySQL Community Server</h1></td>
+	<td><h1><a href="https://dev.mysql.com/downloads/mysql/">Go To Download Page</br>(You can also take this version from your college)</a></h1></td>
+	</tr>
+    <tr>
+	<td><h1>Java Libraries Zip File</br>
+			This zip file contains:</br>
+			1. MySql Connector Jar File.</br>
+			2. Java Charts Jar API's.</h1></td>
+	<td><h1><a href="">Download Now</a></h1></td>
+	</tr>   
+	    <tr>
+	<td><h1>Java Demo Application With MySql Connectivity<h1></td>
+	<td><h1><a href="#">Download Now</a></h1></br><h1>(This link will be enabled on 16th September)</h1></td>
+	</tr>  
+	<table>
+    </div>
+
+	</section>
+
+
+  <section id="about" class="container" >
+    <div class="page-header">
+			<h1 class="text-center">About Me</h1>
+		</div>
+    <div class="info">
+          <p>&nbsp;&nbsp;&nbsp;&nbsp; Hi, I'm Prashant, a Software Developer who loves building products. On a practical front, I am focused, directed, dedicated and an enthusiastic person. Being an active member and as part of the college coding club incorporated the spirit of teamwork and getting along well with all people in the team. The quality of team player is desirable for a success of any company or research group. As a hobby, I write python scripts to automate daily activities and build personalized websites for others.
+      </p>
+      <br />
+      <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;I wish to work and gain exposure in any company or research stream that offers a chance to apply all the practical knowledge gained over the years. In the future, I aim to see myself working in a company or research area which offers me an opportunity to resolve and provide solutions to real time problems. The field should be open to ideas to allow development of new ways to tackle the problems.
+      </p>
+        <br />
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;As an Engineer, I want to help people overcome fuzzy human protocols and leverage technology to make the world a better place. I posit that process kills efficiency and simple is always better. I code, write, read, speak, learn and listen. Most of all, I am as passionate about my craft today as I was when I wrote my first line of code.
+      </p>
+      <br>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;As a leader, I believe that every person has the power to change the world if they have a positive attitude, an open, optimistic mind, and a desire to thrive to succeed. I strongly believe in kindness, respect, integrity and transparency, and empowering those around me to be their best and support them to achieve their dreams. I believe that we grow in this world by helping each other.
+      </p>
+    </div>
+	</section>
+
+  <div id="viewresume">
+          <h1 class="text-center">See My Resume</h1>
+          <a href="#"  data-toggle="modal" data-target="#resume" class="button" target="_blank" >View</a>
+  </div>
+
+	<section id="contact" class="container" >
+    <div class="page-header">
+			<h1 class="text-center">Get In Touch</h1>
+		</div>
+
+    <div class="container">
+  <div class="row">
+
+
+  <form  class="contact-form" method="post" action="https://formspree.io/pbirajdar670@gmail.com" >
+      <div class="row">
+        <div class="col-xs-6 col-md-6 form-group">
+          <input class="form-control" name="name" placeholder="Name" type="text" required />
+        </div>
+        <div class="col-xs-6 col-md-6 form-group">
+          <input class="form-control"name="email" placeholder="Email" type="email" required />
+        </div>
+      </div>
+      <textarea class="form-control"  name="message" placeholder="Message" rows="6"></textarea> <br />
+      <input type="hidden" name="_next" value="//saurabhmarpadge.github.io/index.html#contact" />
+      <div class="row">
+      <div class="col-xs-12 col-md-12 form-group">
+        <button class="btn btn-primary pull-right" target="_blank" type="submit" >Send Message</button>
+      </div>
+    </div>
   </form>
-</section>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script src="js/index.js"></script>
 
+
+	</section>
+  <!-- Modal -->
+  <div id="scontent" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Seminar Content</h4>
+        </div>
+        <div class="modal-body">
+          <div class="content container">
+              <div class="page">
+                <div class="downloadpdf">
+                    <a href="pdf/sc.pdf" id="download">View/Download PDF</a>
+                </div>
+                <div class="pdf-container">
+                    <object class="pdfreader" data="pdf/sc.pdf" type="application/pdf" style="width: 100%; height: 1000px; display: block;">
+                      <p>It appears you don't have a PDF plugin for this browser. No Problem you can <a href="pdf/Saurabhkumar_Marpadge.pdf">click here to
+                      download the PDF file.</a></p>
+                    </object>
+                </div>
+              </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>	
+  <!-- Modal -->
+  <div id="resume" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Resume</h4>
+        </div>
+        <div class="modal-body">
+          <div class="content container">
+              <div class="page">
+                <div class="downloadpdf">
+                    <a href="pdf/PB.pdf" id="download">View/Download PDF</a>
+                </div>
+                <div class="pdf-container">
+                    <object class="pdfreader" data="pdf/PB.pdf" type="application/pdf" style="width: 100%; height: 1000px; display: block;">
+                      <p>It appears you don't have a PDF plugin for this browser. No Problem you can <a href="pdf/Saurabhkumar_Marpadge.pdf">click here to
+                      download the PDF file.</a></p>
+                    </object>
+                </div>
+              </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+	<script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/js/TweenLite.min.js"></script>
+  <script src="js/js/EasePack.min.js"></script>
+  <script src="js/js/rAF.js"></script>
+  <script src="js/js/site-main.js"></script>
+
+  <script type="text/javascript">
+  var sc_project=11031950;
+  var sc_invisible=1;
+  var sc_security="dc0c1d97";
+  var scJsHost = (("https:" == document.location.protocol) ?
+  "https://secure." : "http://www.");
+  document.write("<sc"+"ript type='text/javascript' src='" +
+  scJsHost+
+  "statcounter.com/counter/counter.js'></"+"script>");
+  </script>
+  <noscript><div class="statcounter"><a title="shopify
+  analytics tool" href="http://statcounter.com/shopify/"
+  target="_blank"><img class="statcounter"
+  src="//c.statcounter.com/11031950/0/dc0c1d97/1/"
+  alt="shopify analytics tool"></a></div></noscript>
+  </div>
 </body>
+
 </html>
